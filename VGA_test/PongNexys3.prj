@@ -1,4 +1,0 @@
-verilog work "clock.v"
-verilog work "../Pong/Phase1/video_timer.v"
-verilog work "../Pong/Phase1/game.v"
-verilog work "../Pong/Phase1/pong.v"
