@@ -1,21 +1,21 @@
 //! **************************************************************************
-// Written by: Map P.68d on Wed May 18 12:17:19 2016
+// Written by: Map P.68d on Wed May 18 12:42:26 2016
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "btnd" LOCATE = SITE "C9" LEVEL 1;
-COMP "btnl" LOCATE = SITE "C4" LEVEL 1;
-COMP "blue<0>" LOCATE = SITE "R7" LEVEL 1;
-COMP "blue<1>" LOCATE = SITE "T7" LEVEL 1;
-COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
-COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
-COMP "InputClock" LOCATE = SITE "V10" LEVEL 1;
-COMP "red<0>" LOCATE = SITE "U7" LEVEL 1;
 COMP "red<1>" LOCATE = SITE "V7" LEVEL 1;
 COMP "red<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "InputClock" LOCATE = SITE "V10" LEVEL 1;
 COMP "green<0>" LOCATE = SITE "P8" LEVEL 1;
 COMP "green<1>" LOCATE = SITE "T6" LEVEL 1;
 COMP "green<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "btnd" LOCATE = SITE "C9" LEVEL 1;
+COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "btnl" LOCATE = SITE "C4" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "blue<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "blue<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "U7" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "clock_module/hz50m_clk_count_0" BEL
         "clock_module/hz50m_clk_count_1" BEL "clock_module/hz50m_clk_count_2"
         BEL "clock_module/hz50m_clk_count_3" BEL

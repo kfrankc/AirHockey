@@ -18,16 +18,20 @@ module game(input clk,
 	always @(posedge clk) quadBr <= {quadBr[1:0], btnd_v};
 
 	always @(posedge clk)
-	if(quadAr[2] ^ quadAr[1] ^ quadBr[2] ^ quadBr[1])
+	if(quadAr[2] | quadAr[1] | quadBr[2] | quadBr[1])
 	begin
-		if(quadAr[2] ^ quadBr[1]) begin
-			if(paddlePosition < 200)        // make sure the value doesn't overflow
+		if(quadAr[2] == ~quadAr[1]) begin
+			if(paddlePosition < 500)        // make sure the value doesn't overflow
 				paddlePosition <= paddlePosition + 9'd4;
 		end
-		else begin
+		else if (quadBr[2] == ~quadBr[1]) begin
 			if(paddlePosition > 3)        // make sure the value doesn't underflow
 				paddlePosition <= paddlePosition - 9'd4;
 		end
+//		else begin
+//			if(paddlePosition > 3)        // make sure the value doesn't underflow
+//				paddlePosition <= paddlePosition - 9'd4;
+//		end
 	end
 			
 	// ball movement	

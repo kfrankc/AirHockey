@@ -4,3 +4,45 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off AirHockey_map.ncd AirHockey.ncd AirHockey.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AirHockey.twx AirHockey.ncd -o AirHockey.twr AirHockey.pcf -ucf Nexys3.ucf 
 bitgen -intstyle ise -f AirHockey.ut AirHockey.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.xst" -ofn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 AirHockey.ngc AirHockey.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AirHockey_map.ncd AirHockey.ngd AirHockey.pcf 
+par -w -intstyle ise -ol high -mt off AirHockey_map.ncd AirHockey.ncd AirHockey.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AirHockey.twx AirHockey.ncd -o AirHockey.twr AirHockey.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f AirHockey.ut AirHockey.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.xst" -ofn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 AirHockey.ngc AirHockey.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AirHockey_map.ncd AirHockey.ngd AirHockey.pcf 
+par -w -intstyle ise -ol high -mt off AirHockey_map.ncd AirHockey.ncd AirHockey.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AirHockey.twx AirHockey.ncd -o AirHockey.twr AirHockey.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f AirHockey.ut AirHockey.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.xst" -ofn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 AirHockey.ngc AirHockey.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AirHockey_map.ncd AirHockey.ngd AirHockey.pcf 
+par -w -intstyle ise -ol high -mt off AirHockey_map.ncd AirHockey.ncd AirHockey.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AirHockey.twx AirHockey.ncd -o AirHockey.twr AirHockey.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f AirHockey.ut AirHockey.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.xst" -ofn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 AirHockey.ngc AirHockey.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AirHockey_map.ncd AirHockey.ngd AirHockey.pcf 
+par -w -intstyle ise -ol high -mt off AirHockey_map.ncd AirHockey.ncd AirHockey.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AirHockey.twx AirHockey.ncd -o AirHockey.twr AirHockey.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f AirHockey.ut AirHockey.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.xst" -ofn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 AirHockey.ngc AirHockey.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AirHockey_map.ncd AirHockey.ngd AirHockey.pcf 
+par -w -intstyle ise -ol high -mt off AirHockey_map.ncd AirHockey.ncd AirHockey.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AirHockey.twx AirHockey.ncd -o AirHockey.twr AirHockey.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f AirHockey.ut AirHockey.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.xst" -ofn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 AirHockey.ngc AirHockey.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AirHockey_map.ncd AirHockey.ngd AirHockey.pcf 
+par -w -intstyle ise -ol high -mt off AirHockey_map.ncd AirHockey.ncd AirHockey.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AirHockey.twx AirHockey.ncd -o AirHockey.twr AirHockey.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f AirHockey.ut AirHockey.ncd 
+xst -intstyle ise -ifn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.xst" -ofn "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 AirHockey.ngc AirHockey.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AirHockey_map.ncd AirHockey.ngd AirHockey.pcf 
+par -w -intstyle ise -ol high -mt off AirHockey_map.ncd AirHockey.ncd AirHockey.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AirHockey.twx AirHockey.ncd -o AirHockey.twr AirHockey.pcf -ucf Nexys3.ucf 
+bitgen -intstyle ise -f AirHockey.ut AirHockey.ncd 

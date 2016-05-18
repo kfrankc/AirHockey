@@ -42,6 +42,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="AirHockey.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="AirHockey.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="AirHockey.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="AirHockey_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="AirHockey_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="AirHockey_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="AirHockey_map.mrp" xil_pn:subbranch="Map"/>
@@ -101,7 +102,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463599023" xil_pn:in_ck="-5475589947241846973" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4630744847682027758" xil_pn:start_ts="1463599012">
+    <transform xil_pn:end_ts="1463600531" xil_pn:in_ck="-5475589947241846973" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4630744847682027758" xil_pn:start_ts="1463600520">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -123,7 +124,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463599032" xil_pn:in_ck="6136485384754960411" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4977234167048310052" xil_pn:start_ts="1463599026">
+    <transform xil_pn:end_ts="1463600538" xil_pn:in_ck="6136485384754960411" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4977234167048310052" xil_pn:start_ts="1463600532">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="AirHockey.bld"/>
@@ -132,7 +133,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1463599041" xil_pn:in_ck="6138016963740224860" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1463599032">
+    <transform xil_pn:end_ts="1463600548" xil_pn:in_ck="6138016963740224860" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1463600538">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -146,7 +147,7 @@
       <outfile xil_pn:name="AirHockey_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1463599056" xil_pn:in_ck="6294480204030284469" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1463599041">
+    <transform xil_pn:end_ts="1463600563" xil_pn:in_ck="6294480204030284469" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1463600548">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="AirHockey.ncd"/>
@@ -160,7 +161,7 @@
       <outfile xil_pn:name="AirHockey_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1463599073" xil_pn:in_ck="3217377317692615906" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1463599060">
+    <transform xil_pn:end_ts="1463600577" xil_pn:in_ck="3217377317692615906" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1463600564">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -173,11 +174,11 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1463599087" xil_pn:in_ck="1251094742560329452" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1463599086">
+    <transform xil_pn:end_ts="1463600585" xil_pn:in_ck="1251094742560329452" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1463600584">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1463599056" xil_pn:in_ck="5935848537685317592" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1463599050">
+    <transform xil_pn:end_ts="1463600563" xil_pn:in_ck="5935848537685317592" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1463600557">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="AirHockey.twr"/>
