@@ -13,6 +13,8 @@ module AirHockey(
     input InputClock,
     input btnl,
     input btnd,
+	 input btnr,
+    input btnu,
     output [2:0] red,
     output [2:0] green,
     output [1:0] blue,
@@ -30,6 +32,8 @@ module AirHockey(
 	
 	wire btnl_v;
 	wire btnd_v;
+	wire btnr_v;
+	wire btnu_v;
 	wire clk50;
 	clock clock_module(InputClock, clk50);
 	reg clk25_int;
@@ -44,7 +48,7 @@ module AirHockey(
 
 	vga_display vga_display_module(clk25, hsync, vsync, xpos, ypos);
 	//debouncer debouncer_module(btnl, btnd, clk, btnl_v, btnd_v);
-	game game_inst(clk25, xpos, ypos, btnl, btnd, red, green, blue);
+	game game_inst(clk25, xpos, ypos, btnl, btnd, btnr, btnu, red, green, blue);
 					
 endmodule
 

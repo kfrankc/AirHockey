@@ -5,7 +5,8 @@ Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3
 AirHockey.ngc AirHockey.ngd
 
-Reading NGO file "C:/Users/152/Desktop/AirHockey/AirHockey/AirHockey.ngc" ...
+Reading NGO file "C:/Users/152/Desktop/AirHockey-master/AirHockey/AirHockey.ngc"
+...
 Gathering constraint information from source properties...
 Done.
 
