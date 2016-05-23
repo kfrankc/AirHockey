@@ -19,8 +19,11 @@ module AirHockey(
     output [2:0] green,
     output [1:0] blue,
     output hsync,
-    output vsync
+    output vsync,
+	 output [7:0] seg,
+	 output [3:0] an
     );
+	
 
 	//reg clk50_int;
 	//always @(posedge InputClock) begin
@@ -45,10 +48,16 @@ module AirHockey(
 
 	wire [9:0] xpos;
 	wire [9:0] ypos;
+	
+	wire [3:0] p1_ones;
+	wire [2:0] p1_tens;
+	wire [3:0] p2_ones;
+	wire [2:0] p2_tens;
 
 	vga_display vga_display_module(clk25, hsync, vsync, xpos, ypos);
 	//debouncer debouncer_module(btnl, btnd, clk, btnl_v, btnd_v);
-	game game_inst(clk25, xpos, ypos, btnl, btnd, btnr, btnu, red, green, blue);
+	game game_inst(clk25, xpos, ypos, btnl, btnd, btnr, btnu, p1_ones, p1_tens, p2_ones, p2_tens, red, green, blue);
+	display display_module(clk25, p2_ones, p2_tens, p1_ones, p1_tens, an, seg);
 					
 endmodule
 

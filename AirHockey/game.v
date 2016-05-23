@@ -9,10 +9,20 @@ module game(input clk,
 				input btnd_v,
 				input btnr_v,
 				input btnu_v,
+				input [3:0] p1_ones,
+				input [2:0] p1_tens,
+				input [3:0] p2_ones,
+				input [2:0] p2_tens,
 				output [2:0] red,
 				output [2:0] green,
 				output [1:0] blue);
-		
+	
+	// regs to keep track of score
+	reg [3:0] p1_ones_tmp;
+	reg [2:0] p1_tens_tmp;
+	reg [3:0] p2_ones_tmp;
+	reg [2:0] p2_tens_tmp;
+	
 	// paddle movement		
 	reg [8:0] paddlePosition1, paddlePosition2, paddleTop1, paddleTop2;
 	reg [2:0] quadAr, quadBr, quadCr, quadDr;
@@ -122,7 +132,15 @@ module game(input clk,
 				bounceY <= 1;
 			if (ball && (left || right))
 				missTimer <= 63;
-
+			if (ball && left)
+				begin	
+					p1_ones_tmp <= p1_ones_tmp + 1'b1;
+				end
+			if (ball && right)
+				begin
+					p2_ones_tmp <= p2_ones_tmp + 1'b1;
+				end
+			
 		end
 		else begin
 			if (ballX == 0 && ballY == 0) begin // cheesy reset handling, assumes initial value of 0
@@ -143,5 +161,9 @@ module game(input clk,
 			end
 		end
 	end
-		
+	assign p1_ones = p1_ones_tmp;
+	assign p1_tens = 2'b00;
+	assign p2_ones = p2_ones_tmp;
+	assign p2_tens = 2'b00;
+	
 endmodule

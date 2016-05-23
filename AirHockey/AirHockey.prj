@@ -1,4 +1,5 @@
 verilog work "vga_display.v"
 verilog work "game.v"
+verilog work "display.v"
 verilog work "clock.v"
 verilog work "airhockey.v"

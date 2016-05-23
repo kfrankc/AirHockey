@@ -26,7 +26,9 @@ module clock(InputClock, clk50);
 	
 	//create 
 	reg [26:0] hz50m_clk_count = -1;
+	
 	reg hz50m_clk;
+	
 	always @ (negedge InputClock, posedge InputClock)
 		begin
 			if(hz50m_clk_count >= hz50m_beat - 1)
@@ -41,7 +43,7 @@ module clock(InputClock, clk50);
 				hz50m_clk = 1;
 			else
 				hz50m_clk = 0;
+
 		end
-	
 	assign clk50 = hz50m_clk;
 endmodule

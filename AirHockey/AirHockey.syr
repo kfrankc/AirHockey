@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: AirHockey.prj
@@ -105,13 +105,15 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\152\Desktop\AirHockey-master\AirHockey\vga_display.v" into library work
+Analyzing Verilog file "C:\Users\152\Desktop\AirHockey\AirHockey\vga_display.v" into library work
 Parsing module <vga_display>.
-Analyzing Verilog file "C:\Users\152\Desktop\AirHockey-master\AirHockey\game.v" into library work
+Analyzing Verilog file "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" into library work
 Parsing module <game>.
-Analyzing Verilog file "C:\Users\152\Desktop\AirHockey-master\AirHockey\clock.v" into library work
+Analyzing Verilog file "C:\Users\152\Desktop\AirHockey\AirHockey\display.v" into library work
+Parsing module <display>.
+Analyzing Verilog file "C:\Users\152\Desktop\AirHockey\AirHockey\clock.v" into library work
 Parsing module <clock>.
-Analyzing Verilog file "C:\Users\152\Desktop\AirHockey-master\AirHockey\airhockey.v" into library work
+Analyzing Verilog file "C:\Users\152\Desktop\AirHockey\AirHockey\airhockey.v" into library work
 Parsing module <AirHockey>.
 
 =========================================================================
@@ -121,39 +123,58 @@ Parsing module <AirHockey>.
 Elaborating module <AirHockey>.
 
 Elaborating module <clock>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey-master\AirHockey\clock.v" Line 35: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey\AirHockey\clock.v" Line 37: Result of 28-bit expression is truncated to fit in 27-bit target.
 
 Elaborating module <BUFG>.
 
 Elaborating module <vga_display>.
 
 Elaborating module <game>.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey-master\AirHockey\game.v" Line 29: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey-master\AirHockey\game.v" Line 30: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey-master\AirHockey\game.v" Line 35: Result of 32-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey-master\AirHockey\game.v" Line 36: Result of 32-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey-master\AirHockey\game.v" Line 41: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey-master\AirHockey\game.v" Line 42: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey-master\AirHockey\game.v" Line 47: Result of 32-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey-master\AirHockey\game.v" Line 48: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 39: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 40: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 45: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 46: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 51: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 52: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 57: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 58: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 164: Assignment to p1_ones ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 165: Assignment to p1_tens ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 166: Assignment to p2_ones ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\152\Desktop\AirHockey\AirHockey\game.v" Line 167: Assignment to p2_tens ignored, since the identifier is never used
+
+Elaborating module <display>.
+WARNING:HDLCompiler:413 - "C:\Users\152\Desktop\AirHockey\AirHockey\display.v" Line 40: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:295 - "C:\Users\152\Desktop\AirHockey\AirHockey\display.v" Line 71: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\152\Desktop\AirHockey\AirHockey\display.v" Line 72: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\152\Desktop\AirHockey\AirHockey\display.v" Line 105: case condition never applies
+WARNING:HDLCompiler:295 - "C:\Users\152\Desktop\AirHockey\AirHockey\display.v" Line 106: case condition never applies
+WARNING:HDLCompiler:634 - "C:\Users\152\Desktop\AirHockey\AirHockey\airhockey.v" Line 52: Net <p1_ones[3]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\152\Desktop\AirHockey\AirHockey\airhockey.v" Line 53: Net <p1_tens[2]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\152\Desktop\AirHockey\AirHockey\airhockey.v" Line 54: Net <p2_ones[3]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\152\Desktop\AirHockey\AirHockey\airhockey.v" Line 55: Net <p2_tens[2]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <AirHockey>.
-    Related source file is "C:\Users\152\Desktop\AirHockey-master\AirHockey\airhockey.v".
+    Related source file is "C:\Users\152\Desktop\AirHockey\AirHockey\airhockey.v".
+WARNING:Xst:653 - Signal <p1_ones> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <p1_tens> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <p2_ones> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <p2_tens> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <clk25_int>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <AirHockey> synthesized.
 
 Synthesizing Unit <clock>.
-    Related source file is "C:\Users\152\Desktop\AirHockey-master\AirHockey\clock.v".
+    Related source file is "C:\Users\152\Desktop\AirHockey\AirHockey\clock.v".
         hz50m_beat = 2
     Found 27-bit register for signal <hz50m_clk_count>.
-    Found 27-bit adder for signal <hz50m_clk_count[26]_GND_2_o_add_2_OUT> created at line 35.
-    Found 27-bit comparator greater for signal <n0001> created at line 32
+    Found 27-bit adder for signal <hz50m_clk_count[26]_GND_2_o_add_2_OUT> created at line 37.
+    Found 27-bit comparator greater for signal <n0001> created at line 34
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  27 D-type flip-flop(s).
@@ -161,7 +182,7 @@ Synthesizing Unit <clock>.
 Unit <clock> synthesized.
 
 Synthesizing Unit <vga_display>.
-    Related source file is "C:\Users\152\Desktop\AirHockey-master\AirHockey\vga_display.v".
+    Related source file is "C:\Users\152\Desktop\AirHockey\AirHockey\vga_display.v".
     Found 10-bit register for signal <ypos>.
     Found 1-bit register for signal <hsync>.
     Found 1-bit register for signal <vsync>.
@@ -177,7 +198,11 @@ Synthesizing Unit <vga_display>.
 Unit <vga_display> synthesized.
 
 Synthesizing Unit <game>.
-    Related source file is "C:\Users\152\Desktop\AirHockey-master\AirHockey\game.v".
+    Related source file is "C:\Users\152\Desktop\AirHockey\AirHockey\game.v".
+WARNING:Xst:647 - Input <p1_ones> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_tens> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_ones> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_tens> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <quadBr>.
     Found 3-bit register for signal <quadCr>.
     Found 3-bit register for signal <quadDr>.
@@ -191,86 +216,108 @@ Synthesizing Unit <game>.
     Found 1-bit register for signal <ballXdir>.
     Found 1-bit register for signal <ballYdir>.
     Found 3-bit register for signal <quadAr>.
-    Found 10-bit subtractor for signal <ballX[9]_GND_5_o_sub_56_OUT> created at line 72.
-    Found 9-bit subtractor for signal <ballY[8]_GND_5_o_sub_59_OUT> created at line 76.
-    Found 6-bit subtractor for signal <missTimer[5]_GND_5_o_sub_113_OUT> created at line 142.
-    Found 9-bit adder for signal <paddlePosition1[8]_GND_5_o_add_11_OUT> created at line 29.
-    Found 9-bit adder for signal <paddlePosition2[8]_GND_5_o_add_27_OUT> created at line 41.
-    Found 10-bit adder for signal <ballX[9]_GND_5_o_add_54_OUT> created at line 70.
-    Found 9-bit adder for signal <ballY[8]_GND_5_o_add_57_OUT> created at line 74.
-    Found 10-bit adder for signal <n0283> created at line 89.
-    Found 10-bit adder for signal <n0284> created at line 89.
-    Found 10-bit adder for signal <n0285> created at line 90.
-    Found 10-bit adder for signal <n0286> created at line 90.
-    Found 10-bit adder for signal <n0287> created at line 91.
-    Found 10-bit adder for signal <n0288> created at line 91.
-    Found 10-bit adder for signal <n0289> created at line 92.
-    Found 10-bit adder for signal <n0290> created at line 92.
-    Found 11-bit adder for signal <n0292> created at line 93.
-    Found 10-bit adder for signal <n0294> created at line 93.
-    Found 9-bit subtractor for signal <GND_5_o_GND_5_o_sub_18_OUT<8:0>> created at line 35.
-    Found 9-bit subtractor for signal <GND_5_o_GND_5_o_sub_34_OUT<8:0>> created at line 47.
-    Found 1-bit comparator equal for signal <quadAr[2]_quadAr[1]_equal_10_o> created at line 27
-    Found 9-bit comparator lessequal for signal <paddlePosition1[8]_PWR_5_o_LessThan_11_o> created at line 28
-    Found 1-bit comparator equal for signal <quadBr[2]_quadBr[1]_equal_16_o> created at line 33
-    Found 1-bit comparator equal for signal <quadCr[2]_quadCr[1]_equal_26_o> created at line 39
-    Found 9-bit comparator lessequal for signal <paddlePosition2[8]_PWR_5_o_LessThan_27_o> created at line 40
-    Found 1-bit comparator equal for signal <quadDr[2]_quadDr[1]_equal_32_o> created at line 45
-    Found 10-bit comparator greater for signal <xpos[9]_PWR_5_o_LessThan_67_o> created at line 83
-    Found 10-bit comparator greater for signal <ypos[9]_GND_5_o_LessThan_68_o> created at line 83
-    Found 10-bit comparator lessequal for signal <n0062> created at line 84
-    Found 10-bit comparator lessequal for signal <n0065> created at line 85
-    Found 10-bit comparator lessequal for signal <n0068> created at line 86
-    Found 10-bit comparator lessequal for signal <n0071> created at line 87
-    Found 10-bit comparator lessequal for signal <n0078> created at line 89
-    Found 10-bit comparator lessequal for signal <n0080> created at line 89
-    Found 10-bit comparator lessequal for signal <n0084> created at line 89
-    Found 10-bit comparator lessequal for signal <n0088> created at line 89
-    Found 10-bit comparator lessequal for signal <n0091> created at line 90
-    Found 10-bit comparator lessequal for signal <n0093> created at line 90
-    Found 10-bit comparator lessequal for signal <n0097> created at line 90
-    Found 10-bit comparator lessequal for signal <n0101> created at line 90
-    Found 10-bit comparator lessequal for signal <n0104> created at line 91
-    Found 10-bit comparator lessequal for signal <n0106> created at line 91
-    Found 10-bit comparator lessequal for signal <n0110> created at line 91
-    Found 10-bit comparator lessequal for signal <n0114> created at line 91
-    Found 10-bit comparator lessequal for signal <n0117> created at line 92
-    Found 10-bit comparator lessequal for signal <n0119> created at line 92
-    Found 10-bit comparator lessequal for signal <n0123> created at line 92
-    Found 10-bit comparator lessequal for signal <n0127> created at line 92
-    Found 10-bit comparator lessequal for signal <n0130> created at line 93
-    Found 11-bit comparator lessequal for signal <n0133> created at line 93
-    Found 10-bit comparator lessequal for signal <n0136> created at line 93
-    Found 10-bit comparator lessequal for signal <n0140> created at line 93
+    Found 10-bit subtractor for signal <ballX[9]_GND_5_o_sub_56_OUT> created at line 82.
+    Found 9-bit subtractor for signal <ballY[8]_GND_5_o_sub_59_OUT> created at line 86.
+    Found 6-bit subtractor for signal <missTimer[5]_GND_5_o_sub_117_OUT> created at line 160.
+    Found 9-bit adder for signal <paddlePosition1[8]_GND_5_o_add_11_OUT> created at line 39.
+    Found 9-bit adder for signal <paddlePosition2[8]_GND_5_o_add_27_OUT> created at line 51.
+    Found 10-bit adder for signal <ballX[9]_GND_5_o_add_54_OUT> created at line 80.
+    Found 9-bit adder for signal <ballY[8]_GND_5_o_add_57_OUT> created at line 84.
+    Found 10-bit adder for signal <n0287> created at line 99.
+    Found 10-bit adder for signal <n0288> created at line 99.
+    Found 10-bit adder for signal <n0289> created at line 100.
+    Found 10-bit adder for signal <n0290> created at line 100.
+    Found 10-bit adder for signal <n0291> created at line 101.
+    Found 10-bit adder for signal <n0292> created at line 101.
+    Found 10-bit adder for signal <n0293> created at line 102.
+    Found 10-bit adder for signal <n0294> created at line 102.
+    Found 11-bit adder for signal <n0296> created at line 103.
+    Found 10-bit adder for signal <n0298> created at line 103.
+    Found 9-bit subtractor for signal <GND_5_o_GND_5_o_sub_18_OUT<8:0>> created at line 45.
+    Found 9-bit subtractor for signal <GND_5_o_GND_5_o_sub_34_OUT<8:0>> created at line 57.
+    Found 1-bit comparator equal for signal <quadAr[2]_quadAr[1]_equal_10_o> created at line 37
+    Found 9-bit comparator lessequal for signal <paddlePosition1[8]_PWR_5_o_LessThan_11_o> created at line 38
+    Found 1-bit comparator equal for signal <quadBr[2]_quadBr[1]_equal_16_o> created at line 43
+    Found 1-bit comparator equal for signal <quadCr[2]_quadCr[1]_equal_26_o> created at line 49
+    Found 9-bit comparator lessequal for signal <paddlePosition2[8]_PWR_5_o_LessThan_27_o> created at line 50
+    Found 1-bit comparator equal for signal <quadDr[2]_quadDr[1]_equal_32_o> created at line 55
+    Found 10-bit comparator greater for signal <xpos[9]_PWR_5_o_LessThan_67_o> created at line 93
+    Found 10-bit comparator greater for signal <ypos[9]_GND_5_o_LessThan_68_o> created at line 93
+    Found 10-bit comparator lessequal for signal <n0062> created at line 94
+    Found 10-bit comparator lessequal for signal <n0065> created at line 95
+    Found 10-bit comparator lessequal for signal <n0068> created at line 96
+    Found 10-bit comparator lessequal for signal <n0071> created at line 97
+    Found 10-bit comparator lessequal for signal <n0078> created at line 99
+    Found 10-bit comparator lessequal for signal <n0080> created at line 99
+    Found 10-bit comparator lessequal for signal <n0084> created at line 99
+    Found 10-bit comparator lessequal for signal <n0088> created at line 99
+    Found 10-bit comparator lessequal for signal <n0091> created at line 100
+    Found 10-bit comparator lessequal for signal <n0093> created at line 100
+    Found 10-bit comparator lessequal for signal <n0097> created at line 100
+    Found 10-bit comparator lessequal for signal <n0101> created at line 100
+    Found 10-bit comparator lessequal for signal <n0104> created at line 101
+    Found 10-bit comparator lessequal for signal <n0106> created at line 101
+    Found 10-bit comparator lessequal for signal <n0110> created at line 101
+    Found 10-bit comparator lessequal for signal <n0114> created at line 101
+    Found 10-bit comparator lessequal for signal <n0117> created at line 102
+    Found 10-bit comparator lessequal for signal <n0119> created at line 102
+    Found 10-bit comparator lessequal for signal <n0123> created at line 102
+    Found 10-bit comparator lessequal for signal <n0127> created at line 102
+    Found 10-bit comparator lessequal for signal <n0130> created at line 103
+    Found 11-bit comparator lessequal for signal <n0133> created at line 103
+    Found 10-bit comparator lessequal for signal <n0136> created at line 103
+    Found 10-bit comparator lessequal for signal <n0140> created at line 103
     Summary:
 	inferred  15 Adder/Subtractor(s).
 	inferred  59 D-type flip-flop(s).
 	inferred  32 Comparator(s).
 Unit <game> synthesized.
 
+Synthesizing Unit <display>.
+    Related source file is "C:\Users\152\Desktop\AirHockey\AirHockey\display.v".
+    Found 4-bit register for signal <an_tmp>.
+    Found 2-bit register for signal <counter>.
+    Found 2-bit adder for signal <counter[1]_GND_6_o_add_2_OUT> created at line 40.
+    Found 4x4-bit Read Only RAM for signal <GND_6_o_PWR_9_o_mux_15_OUT>
+    Found 2-bit comparator greater for signal <n0000> created at line 37
+    WARNING:Xst:2404 -  FFs/Latches <disp_tmp<7:6>> (without init value) have a constant value of 1 in block <display>.
+    WARNING:Xst:2404 -  FFs/Latches <disp_tmp<6:1>> (without init value) have a constant value of 0 in block <display>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <display> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 18
+# RAMs                                                 : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 19
  10-bit adder                                          : 11
  10-bit addsub                                         : 1
  11-bit adder                                          : 1
+ 2-bit adder                                           : 1
  27-bit adder                                          : 1
  6-bit subtractor                                      : 1
  9-bit addsub                                          : 3
-# Registers                                            : 19
+# Registers                                            : 21
  1-bit register                                        : 7
  10-bit register                                       : 3
+ 2-bit register                                        : 1
  27-bit register                                       : 1
  3-bit register                                        : 4
+ 4-bit register                                        : 1
  6-bit register                                        : 1
  9-bit register                                        : 3
-# Comparators                                          : 35
+# Comparators                                          : 36
  1-bit comparator equal                                : 4
  10-bit comparator greater                             : 3
  10-bit comparator lessequal                           : 24
  11-bit comparator lessequal                           : 1
+ 2-bit comparator greater                              : 1
  27-bit comparator greater                             : 1
  9-bit comparator lessequal                            : 2
 # Xors                                                 : 2
@@ -286,6 +333,21 @@ Macro Statistics
 Synthesizing (advanced) Unit <clock>.
 The following registers are absorbed into counter <hz50m_clk_count>: 1 register on signal <hz50m_clk_count>.
 Unit <clock> synthesized (advanced).
+
+Synthesizing (advanced) Unit <display>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3231 - The small RAM <Mram_GND_6_o_PWR_9_o_mux_15_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <display> synthesized (advanced).
 
 Synthesizing (advanced) Unit <game>.
 The following registers are absorbed into accumulator <paddlePosition1>: 1 register on signal <paddlePosition1>.
@@ -304,23 +366,27 @@ Unit <vga_display> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# RAMs                                                 : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
 # Adders/Subtractors                                   : 10
  10-bit adder                                          : 9
  11-bit adder                                          : 1
-# Counters                                             : 4
+# Counters                                             : 5
  10-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
  27-bit up counter                                     : 1
  6-bit down counter                                    : 1
 # Accumulators                                         : 4
  10-bit updown accumulator                             : 1
  9-bit updown accumulator                              : 3
-# Registers                                            : 19
- Flip-Flops                                            : 19
-# Comparators                                          : 35
+# Registers                                            : 23
+ Flip-Flops                                            : 23
+# Comparators                                          : 36
  1-bit comparator equal                                : 4
  10-bit comparator greater                             : 3
  10-bit comparator lessequal                           : 24
  11-bit comparator lessequal                           : 1
+ 2-bit comparator greater                              : 1
  27-bit comparator greater                             : 1
  9-bit comparator lessequal                            : 2
 # Xors                                                 : 2
@@ -337,8 +403,6 @@ Optimizing unit <AirHockey> ...
 Optimizing unit <game> ...
 WARNING:Xst:1710 - FF/Latch <ballX_0> (without init value) has a constant value of 0 in block <game>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ballY_0> (without init value) has a constant value of 0 in block <game>. This FF/Latch will be trimmed during the optimization process.
-
-Optimizing unit <vga_display> ...
 WARNING:Xst:1710 - FF/Latch <game_inst/ballY_0> (without init value) has a constant value of 0 in block <AirHockey>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <game_inst/ballX_0> (without init value) has a constant value of 0 in block <AirHockey>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <game_inst/paddlePosition1_2> (without init value) has a constant value of 0 in block <AirHockey>. This FF/Latch will be trimmed during the optimization process.
@@ -348,6 +412,8 @@ WARNING:Xst:1710 - FF/Latch <game_inst/paddlePosition2_2> (without init value) h
 WARNING:Xst:1710 - FF/Latch <game_inst/paddlePosition2_1> (without init value) has a constant value of 0 in block <AirHockey>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <game_inst/paddlePosition2_0> (without init value) has a constant value of 0 in block <AirHockey>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <game_inst/ballY_1> in Unit <AirHockey> is equivalent to the following FF/Latch, which will be removed : <game_inst/ballX_1> 
+INFO:Xst:2261 - The FF/Latch <vga_display_module/xpos_0> in Unit <AirHockey> is equivalent to the following FF/Latch, which will be removed : <display_module/counter_0> 
+INFO:Xst:2261 - The FF/Latch <vga_display_module/xpos_1> in Unit <AirHockey> is equivalent to the following FF/Latch, which will be removed : <display_module/counter_1> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -355,9 +421,6 @@ Found area constraint ratio of 100 (+ 5) on block AirHockey, actual ratio is 5.
 FlipFlop game_inst/ballY_1 has been replicated 2 time(s)
 FlipFlop game_inst/paddlePosition1_6 has been replicated 1 time(s)
 FlipFlop game_inst/paddlePosition2_6 has been replicated 1 time(s)
-FlipFlop vga_display_module/ypos_2 has been replicated 1 time(s)
-FlipFlop vga_display_module/ypos_7 has been replicated 1 time(s)
-FlipFlop vga_display_module/ypos_9 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -372,8 +435,8 @@ Unit <AirHockey> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 99
- Flip-Flops                                            : 99
+# Registers                                            : 100
+ Flip-Flops                                            : 100
 # Shift Registers                                      : 4
  2-bit shift register                                  : 4
 
@@ -398,32 +461,31 @@ Top Level Output File Name         : AirHockey.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 550
+# BELS                             : 572
 #      GND                         : 1
-#      INV                         : 9
+#      INV                         : 11
 #      LUT1                        : 44
-#      LUT2                        : 27
+#      LUT2                        : 33
 #      LUT3                        : 25
-#      LUT4                        : 140
+#      LUT4                        : 174
 #      LUT5                        : 49
-#      LUT6                        : 97
+#      LUT6                        : 77
 #      MUXCY                       : 104
 #      MUXF7                       : 6
 #      VCC                         : 1
 #      XORCY                       : 47
-# FlipFlops/Latches                : 103
-#      FD                          : 57
+# FlipFlops/Latches                : 104
+#      FD                          : 71
 #      FDE                         : 18
 #      FDR                         : 15
-#      FDRE                        : 13
 # Shift Registers                  : 4
 #      SRLC16E                     : 4
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 14
+# IO Buffers                       : 26
 #      IBUF                        : 4
-#      OBUF                        : 10
+#      OBUF                        : 22
 
 Device utilization summary:
 ---------------------------
@@ -432,22 +494,22 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             103  out of  18224     0%  
- Number of Slice LUTs:                  395  out of   9112     4%  
-    Number used as Logic:               391  out of   9112     4%  
+ Number of Slice Registers:             104  out of  18224     0%  
+ Number of Slice LUTs:                  417  out of   9112     4%  
+    Number used as Logic:               413  out of   9112     4%  
     Number used as Memory:                4  out of   2176     0%  
        Number used as SRL:                4
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    414
-   Number with an unused Flip Flop:     311  out of    414    75%  
-   Number with an unused LUT:            19  out of    414     4%  
-   Number of fully used LUT-FF pairs:    84  out of    414    20%  
-   Number of unique control sets:        11
+ Number of LUT Flip Flop pairs used:    432
+   Number with an unused Flip Flop:     328  out of    432    75%  
+   Number with an unused LUT:            15  out of    432     3%  
+   Number of fully used LUT-FF pairs:    89  out of    432    20%  
+   Number of unique control sets:        10
 
 IO Utilization: 
- Number of IOs:                          15
- Number of bonded IOBs:                  15  out of    232     6%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    232    11%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
@@ -474,7 +536,7 @@ Clock Information:
 Clock Signal                        | Clock buffer(FF name)  | Load  |
 ------------------------------------+------------------------+-------+
 clk50(clock_module/hz50m_clk<26>6:O)| NONE(*)(clk25_int)     | 1     |
-clk25_int                           | BUFG                   | 79    |
+clk25_int                           | BUFG                   | 80    |
 InputClock                          | BUFGP                  | 27    |
 ------------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -492,7 +554,7 @@ Speed Grade: -3
 
    Minimum period: 6.184ns (Maximum Frequency: 161.710MHz)
    Minimum input arrival time before clock: 1.801ns
-   Maximum output required time after clock: 10.970ns
+   Maximum output required time after clock: 10.924ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -523,7 +585,7 @@ Delay:               1.456ns (Levels of Logic = 0)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk25_int'
   Clock period: 6.184ns (frequency: 161.710MHz)
-  Total number of paths / destination ports: 6117 / 127
+  Total number of paths / destination ports: 6350 / 102
 -------------------------------------------------------------------------
 Delay:               6.184ns (Levels of Logic = 6)
   Source:            game_inst/paddlePosition2_8 (FF)
@@ -536,11 +598,11 @@ Delay:               6.184ns (Levels of Logic = 6)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q             12   0.447   1.137  game_inst/paddlePosition2_8 (game_inst/paddlePosition2_8)
-     LUT3:I0->O            2   0.205   0.864  game_inst/Madd_n0286_cy<8>11 (game_inst/Madd_n0286_cy<8>)
+     LUT3:I0->O            2   0.205   0.864  game_inst/Madd_n0290_cy<8>11 (game_inst/Madd_n0290_cy<8>)
      LUT4:I0->O            0   0.203   0.000  game_inst/Mcompar_ypos[9]_BUS_0010_LessThan_84_o_lutdi4 (game_inst/Mcompar_ypos[9]_BUS_0010_LessThan_84_o_lutdi4)
      MUXCY:DI->O           2   0.339   0.617  game_inst/Mcompar_ypos[9]_BUS_0010_LessThan_84_o_cy<4> (game_inst/ypos[9]_BUS_0010_LessThan_84_o)
      LUT3:I2->O            9   0.205   0.830  game_inst/paddle23_cy_cy_cy_cy (game_inst/paddle2)
-     LUT6:I5->O            1   0.205   0.827  game_inst/bounceX_glue_set_SW0 (N33)
+     LUT6:I5->O            1   0.205   0.827  game_inst/bounceX_glue_set_SW0 (N36)
      LUT6:I2->O            1   0.203   0.000  game_inst/bounceX_glue_set (game_inst/bounceX_glue_set)
      FDR:D                     0.102          game_inst/bounceX
     ----------------------------------------
@@ -596,29 +658,29 @@ Offset:              1.801ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk25_int'
-  Total number of paths / destination ports: 5373 / 10
+  Total number of paths / destination ports: 5377 / 14
 -------------------------------------------------------------------------
-Offset:              10.970ns (Levels of Logic = 8)
-  Source:            game_inst/paddlePosition2_7 (FF)
+Offset:              10.924ns (Levels of Logic = 8)
+  Source:            game_inst/paddlePosition2_5 (FF)
   Destination:       blue<1> (PAD)
   Source Clock:      clk25_int rising
 
-  Data Path: game_inst/paddlePosition2_7 to blue<1>
+  Data Path: game_inst/paddlePosition2_5 to blue<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             17   0.447   1.372  game_inst/paddlePosition2_7 (game_inst/paddlePosition2_7)
-     LUT5:I0->O            2   0.203   0.864  game_inst/Madd_n0290_xor<7>11 (game_inst/n0290<7>)
-     LUT4:I0->O            0   0.203   0.000  game_inst/Mcompar_ypos[9]_BUS_0014_LessThan_96_o_lutdi3 (game_inst/Mcompar_ypos[9]_BUS_0014_LessThan_96_o_lutdi3)
-     MUXCY:DI->O           1   0.339   0.580  game_inst/Mcompar_ypos[9]_BUS_0014_LessThan_96_o_cy<3> (game_inst/Mcompar_ypos[9]_BUS_0014_LessThan_96_o_cy<3>)
-     LUT5:I4->O            1   0.205   0.944  game_inst/Mcompar_ypos[9]_BUS_0014_LessThan_96_o_cy<4> (game_inst/ypos[9]_BUS_0014_LessThan_96_o)
-     LUT6:I0->O            5   0.203   1.059  game_inst/paddletop2 (game_inst/paddletop2)
+     FDE:C->Q             19   0.447   1.319  game_inst/paddlePosition2_5 (game_inst/paddlePosition2_5)
+     LUT4:I0->O            2   0.203   0.864  game_inst/Madd_n0293_xor<6>11 (game_inst/n0293<6>)
+     LUT4:I0->O            1   0.203   0.000  game_inst/Mcompar_BUS_0013_ypos[9]_LessThan_94_o_lut<3> (game_inst/Mcompar_BUS_0013_ypos[9]_LessThan_94_o_lut<3>)
+     MUXCY:S->O            1   0.366   0.580  game_inst/Mcompar_BUS_0013_ypos[9]_LessThan_94_o_cy<3> (game_inst/Mcompar_BUS_0013_ypos[9]_LessThan_94_o_cy<3>)
+     LUT5:I4->O            1   0.205   0.924  game_inst/Mcompar_BUS_0013_ypos[9]_LessThan_94_o_cy<4> (game_inst/BUS_0013_ypos[9]_LessThan_94_o)
+     LUT6:I1->O            5   0.203   1.059  game_inst/paddletop2 (game_inst/paddletop2)
      LUT6:I1->O            3   0.203   0.995  game_inst/background (green_1_OBUF)
      LUT6:I1->O            1   0.203   0.579  game_inst/blue<1> (blue_1_OBUF)
      OBUF:I->O                 2.571          blue_1_OBUF (blue<1>)
     ----------------------------------------
-    Total                     10.970ns (4.577ns logic, 6.393ns route)
-                                       (41.7% logic, 58.3% route)
+    Total                     10.924ns (4.604ns logic, 6.320ns route)
+                                       (42.1% logic, 57.9% route)
 
 =========================================================================
 
@@ -653,13 +715,13 @@ clk50          |    1.456|         |         |         |
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.80 secs
+Total CPU time to Xst completion: 8.88 secs
  
 --> 
 
-Total memory usage is 260356 kilobytes
+Total memory usage is 260868 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   19 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   42 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 
