@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Mon May 23 11:52:27 2016
+// Written by: Map P.68d on Wed May 25 15:34:40 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -53,7 +53,25 @@ TIMEGRP sys_clk_pin = BEL "clock_module/hz50m_clk_count_0" BEL
         "clock_module/hz50m_clk_count_23" BEL
         "clock_module/hz50m_clk_count_24" BEL
         "clock_module/hz50m_clk_count_25" BEL
-        "clock_module/hz50m_clk_count_26" BEL "InputClock_BUFGP/BUFG";
+        "clock_module/hz50m_clk_count_26" BEL "clock_module/fast_clk_count_0"
+        BEL "clock_module/fast_clk_count_1" BEL
+        "clock_module/fast_clk_count_2" BEL "clock_module/fast_clk_count_3"
+        BEL "clock_module/fast_clk_count_4" BEL
+        "clock_module/fast_clk_count_5" BEL "clock_module/fast_clk_count_6"
+        BEL "clock_module/fast_clk_count_7" BEL
+        "clock_module/fast_clk_count_8" BEL "clock_module/fast_clk_count_9"
+        BEL "clock_module/fast_clk_count_10" BEL
+        "clock_module/fast_clk_count_11" BEL "clock_module/fast_clk_count_12"
+        BEL "clock_module/fast_clk_count_13" BEL
+        "clock_module/fast_clk_count_14" BEL "clock_module/fast_clk_count_15"
+        BEL "clock_module/fast_clk_count_16" BEL
+        "clock_module/fast_clk_count_17" BEL "clock_module/fast_clk_count_18"
+        BEL "clock_module/fast_clk_count_19" BEL
+        "clock_module/fast_clk_count_20" BEL "clock_module/fast_clk_count_21"
+        BEL "clock_module/fast_clk_count_22" BEL
+        "clock_module/fast_clk_count_23" BEL "clock_module/fast_clk_count_24"
+        BEL "clock_module/fast_clk_count_25" BEL
+        "clock_module/fast_clk_count_26" BEL "InputClock_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 

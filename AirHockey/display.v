@@ -25,7 +25,8 @@ module display(
 	input [3:0] p1_ones,
 	input [2:0] p1_tens,
 	output [3:0] an,
-	output [7:0] seg
+	output [7:0] seg,
+	output [1:0] count
 	);
 
 	reg [1:0] counter = 0;
@@ -110,4 +111,5 @@ module display(
 	end
 	assign an = an_tmp;
 	assign seg = disp_tmp;
+	assign count = counter;
 endmodule

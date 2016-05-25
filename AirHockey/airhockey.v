@@ -38,7 +38,8 @@ module AirHockey(
 	wire btnr_v;
 	wire btnu_v;
 	wire clk50;
-	clock clock_module(InputClock, clk50);
+	wire clk400;
+	clock clock_module(InputClock, clk50, clk400);
 	reg clk25_int;
 	always @(posedge clk50) begin
 		clk25_int <= ~clk25_int;
@@ -54,10 +55,11 @@ module AirHockey(
 	wire [3:0] p2_ones;
 	wire [2:0] p2_tens;
 
+	wire [1:0] count;
 	vga_display vga_display_module(clk25, hsync, vsync, xpos, ypos);
 	//debouncer debouncer_module(btnl, btnd, clk, btnl_v, btnd_v);
 	game game_inst(clk25, xpos, ypos, btnl, btnd, btnr, btnu, p1_ones, p1_tens, p2_ones, p2_tens, red, green, blue);
-	display display_module(clk25, p2_ones, p2_tens, p1_ones, p1_tens, an, seg);
+	display display_module(clk400, p2_ones, p2_tens, p1_ones, p1_tens, an, seg, count);
 					
 endmodule
 

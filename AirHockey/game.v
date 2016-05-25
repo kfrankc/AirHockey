@@ -9,19 +9,21 @@ module game(input clk,
 				input btnd_v,
 				input btnr_v,
 				input btnu_v,
-				input [3:0] p1_ones,
-				input [2:0] p1_tens,
-				input [3:0] p2_ones,
-				input [2:0] p2_tens,
+				output [3:0] p1_ones,
+				output [2:0] p1_tens,
+				output [3:0] p2_ones,
+				output [2:0] p2_tens,
 				output [2:0] red,
 				output [2:0] green,
 				output [1:0] blue);
 	
 	// regs to keep track of score
-	reg [3:0] p1_ones_tmp;
-	reg [2:0] p1_tens_tmp;
-	reg [3:0] p2_ones_tmp;
-	reg [2:0] p2_tens_tmp;
+	reg [3:0] p1_ones_tmp = 0;
+	reg [2:0] p1_tens_tmp = 0;
+	reg [3:0] p2_ones_tmp = 0;
+	reg [2:0] p2_tens_tmp = 0;
+	reg p1_score;
+	reg p2_score;
 	
 	// paddle movement		
 	reg [8:0] paddlePosition1, paddlePosition2, paddleTop1, paddleTop2;
@@ -65,15 +67,15 @@ module game(input clk,
 	reg [8:0] ballY;
 	reg ballXdir, ballYdir;
 	reg bounceX, bounceY;
-	reg straight;
+	reg over;
 	
 	wire endOfFrame = (xpos == 0 && ypos == 480);
 		
 	always @(posedge clk) begin
 		if (endOfFrame) begin // update ball position at end of each frame
-			if (ballX == 0 && ballY == 0) begin // cheesy reset handling, assumes initial value of 0
-				ballX <= 480;
-				ballY <= 300;
+			if ((ballX == 0 && ballY == 0) || (over == 1)) begin // cheesy reset handling, assumes initial value of 0
+				ballX <= 315;
+				ballY <= 230;
 			end
 			else begin
 				if (ballXdir ^ bounceX) 
@@ -131,15 +133,13 @@ module game(input clk,
 			if (ball && (top || bottom))
 				bounceY <= 1;
 			if (ball && (left || right))
-				missTimer <= 63;
-			if (ball && left)
-				begin	
-					p1_ones_tmp <= p1_ones_tmp + 1'b1;
-				end
-			if (ball && right)
 				begin
-					p2_ones_tmp <= p2_ones_tmp + 1'b1;
+					missTimer <= 63;
 				end
+			if (ball && left)
+				p2_score <= 1;
+			if (ball && right)
+				p1_score <= 1;
 			
 		end
 		else begin
@@ -148,10 +148,34 @@ module game(input clk,
 				ballYdir <= 1;
 				bounceX <= 0;
 				bounceY <= 0;
+				p1_score <= 0;
+				p2_score <= 0;
+				over <= 0;
 			end 
-			else begin			
-				if (bounceX)
+			else begin
+				if(p1_score) begin
+					if((p1_ones_tmp[0] == 1) && ~p1_ones_tmp[1] && ~p1_ones_tmp[2] && p1_ones_tmp[3]) begin
+						p1_tens_tmp <= 1;
+						p1_ones_tmp <= 0;
+						over <= 1;
+					end
+					else
+						p1_ones_tmp <= p1_ones_tmp + 1;
+					p1_score <= 0;
+				end
+				if(p2_score) begin
+					if((p2_ones_tmp[0] == 1) && ~p2_ones_tmp[1] && ~p2_ones_tmp[2] && p2_ones_tmp[3]) begin
+						p2_tens_tmp <= 1;
+						p2_ones_tmp <= 0;
+						over <= 1;
+					end
+					else
+						p2_ones_tmp <= p2_ones_tmp + 1;
+					p2_score <= 0;
+				end
+				if (bounceX) begin
 					ballXdir <= ~ballXdir;
+				end
 				if (bounceY)
 					ballYdir <= ~ballYdir;			
 				bounceX <= 0;
@@ -162,8 +186,8 @@ module game(input clk,
 		end
 	end
 	assign p1_ones = p1_ones_tmp;
-	assign p1_tens = 2'b00;
+	assign p1_tens = p1_tens_tmp;
 	assign p2_ones = p2_ones_tmp;
-	assign p2_tens = 2'b00;
+	assign p2_tens = p2_tens_tmp;
 	
 endmodule
