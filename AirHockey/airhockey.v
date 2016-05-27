@@ -15,6 +15,7 @@ module AirHockey(
     input btnd,
 	 input btnr,
     input btnu,
+	 input btns,
     output [2:0] red,
     output [2:0] green,
     output [1:0] blue,
@@ -58,7 +59,7 @@ module AirHockey(
 	wire [1:0] count;
 	vga_display vga_display_module(clk25, hsync, vsync, xpos, ypos);
 	//debouncer debouncer_module(btnl, btnd, clk, btnl_v, btnd_v);
-	game game_inst(clk25, xpos, ypos, btnl, btnd, btnr, btnu, p1_ones, p1_tens, p2_ones, p2_tens, red, green, blue);
+	game game_inst(clk25, xpos, ypos, btnl, btnd, btnr, btnu, btns, p1_ones, p1_tens, p2_ones, p2_tens, red, green, blue);
 	display display_module(clk400, p2_ones, p2_tens, p1_ones, p1_tens, an, seg, count);
 					
 endmodule

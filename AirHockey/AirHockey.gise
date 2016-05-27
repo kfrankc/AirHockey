@@ -95,15 +95,9 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="airhockey.v"/>
-      <outfile xil_pn:name="clock.v"/>
-      <outfile xil_pn:name="debouncer.v"/>
-      <outfile xil_pn:name="display.v"/>
-      <outfile xil_pn:name="display_tb.v"/>
-      <outfile xil_pn:name="game.v"/>
-      <outfile xil_pn:name="game_tb.v"/>
-      <outfile xil_pn:name="vga_display.v"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1464201323" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="18317367113695810" xil_pn:start_ts="1464201323">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -124,42 +118,32 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="airhockey.v"/>
-      <outfile xil_pn:name="clock.v"/>
-      <outfile xil_pn:name="debouncer.v"/>
-      <outfile xil_pn:name="display.v"/>
-      <outfile xil_pn:name="display_tb.v"/>
-      <outfile xil_pn:name="game.v"/>
-      <outfile xil_pn:name="game_tb.v"/>
-      <outfile xil_pn:name="vga_display.v"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1464204939" xil_pn:in_ck="-1195165019395237505" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4132523547813749283" xil_pn:start_ts="1464204937">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="display_tb_beh.prj"/>
-      <outfile xil_pn:name="display_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1464204940" xil_pn:in_ck="-6286871083750786466" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5485595867297061574" xil_pn:start_ts="1464204939">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="display_tb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1464196824" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1464196824">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -189,13 +173,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1464215665" xil_pn:in_ck="762159496230191837" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4630744847682027758" xil_pn:start_ts="1464215652">
+    <transform xil_pn:end_ts="1464384405" xil_pn:in_ck="762159496230191837" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4630744847682027758" xil_pn:start_ts="1464384391">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="AirHockey.lso"/>
       <outfile xil_pn:name="AirHockey.ngc"/>
@@ -209,27 +191,23 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1464212721" xil_pn:in_ck="3767418097412214" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119258976289012575" xil_pn:start_ts="1464212721">
+    <transform xil_pn:end_ts="1464379570" xil_pn:in_ck="3767418097412214" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119258976289012575" xil_pn:start_ts="1464379570">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1464215672" xil_pn:in_ck="6136485384754960411" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4977234167048310052" xil_pn:start_ts="1464215665">
+    <transform xil_pn:end_ts="1464384411" xil_pn:in_ck="6136485384754960411" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4977234167048310052" xil_pn:start_ts="1464384405">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="AirHockey.bld"/>
       <outfile xil_pn:name="AirHockey.ngd"/>
       <outfile xil_pn:name="AirHockey_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1464215682" xil_pn:in_ck="6138016963740224860" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1464215672">
+    <transform xil_pn:end_ts="1464384424" xil_pn:in_ck="6138016963740224860" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1464384411">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="AirHockey.pcf"/>
       <outfile xil_pn:name="AirHockey_map.map"/>
       <outfile xil_pn:name="AirHockey_map.mrp"/>
@@ -240,10 +218,9 @@
       <outfile xil_pn:name="AirHockey_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1464215697" xil_pn:in_ck="6294480204030284469" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1464215682">
+    <transform xil_pn:end_ts="1464384440" xil_pn:in_ck="6294480204030284469" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1464384424">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="AirHockey.ncd"/>
       <outfile xil_pn:name="AirHockey.pad"/>
       <outfile xil_pn:name="AirHockey.par"/>
@@ -255,11 +232,10 @@
       <outfile xil_pn:name="AirHockey_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1464215710" xil_pn:in_ck="3217377317692615906" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1464215697">
+    <transform xil_pn:end_ts="1464384454" xil_pn:in_ck="3217377317692615906" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1464384440">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="AirHockey.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="airhockey.bgn"/>
@@ -269,24 +245,21 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1464215733" xil_pn:in_ck="1251094742560329452" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1464215732">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-    </transform>
-    <transform xil_pn:end_ts="1463777911" xil_pn:in_ck="1251094742560329452" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="4977234167048310052" xil_pn:start_ts="1463777911">
+    <transform xil_pn:end_ts="1464384278" xil_pn:in_ck="1251094742560329452" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1464384277">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1464215697" xil_pn:in_ck="5935848537685317592" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1464215692">
+    <transform xil_pn:end_ts="1464378533" xil_pn:in_ck="1251094742560329452" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="4977234167048310052" xil_pn:start_ts="1464378533">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1464384440" xil_pn:in_ck="5935848537685317592" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1464384434">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="AirHockey.twr"/>
       <outfile xil_pn:name="AirHockey.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
