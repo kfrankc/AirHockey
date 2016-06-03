@@ -1,0 +1,28 @@
+Command line:
+   AirHockey_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55338
+
+Fri Jun 03 13:15:46 2016
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 829.288 Meg
+
+ Total Signals          : 96
+ Total Nets             : 101
+ Total Signal Drivers   : 45
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 63
+ Total Traceable Variables  : 63
+ Total Scalar Nets and Variables : 443
+
+ Total Simulation Time: 6.55204 sec
+
+ Current Memory Usage: 829.288 Meg
+
+Fri Jun 03 13:18:07 2016
+
